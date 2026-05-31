@@ -107,7 +107,7 @@ namespace SmartFillMonitor
 
         private void ConfigLog()
         {
-            Log.Logger = new LoggerConfiguration()
+           new LoggerConfiguration()
                 .MinimumLevel.Debug()
                 .Enrich.WithThreadId()
                 .WriteTo.RichTextBox(LogView, outputTemplate: LogTemplate)
