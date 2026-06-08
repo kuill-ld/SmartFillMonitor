@@ -18,6 +18,7 @@ namespace SmartFillMonitor
     {
         public static RichTextBox LogView = new RichTextBox()
         {
+
             IsReadOnly = true,
             VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
             Background = Brushes.Black,
@@ -31,6 +32,7 @@ namespace SmartFillMonitor
         private const string SqliteConnStr = "Data Source=SmartFill.db;";
         protected override async void OnStartup(StartupEventArgs e)
         {
+            Console.WriteLine("ggg");
             base.OnStartup(e);
             SetExceptionHanding();//设置全局异常
             ConfigLog();//配置日志
